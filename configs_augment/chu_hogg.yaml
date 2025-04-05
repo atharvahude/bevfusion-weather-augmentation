@@ -1,0 +1,3 @@
+input_folder: /workspace/mmdetection3d/data/nuscenes/samples/LIDAR_TOP
+output_folder: /workspace/my_workspace/nusecnes_augments/chu_hogg
+augmentation_type: chu_hogg_fog

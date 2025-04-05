@@ -1,0 +1,4 @@
+input_folder: /workspace/mmdetection3d/data/nuscenes/samples/LIDAR_TOP
+output_folder: /workspace/my_workspace/nusecnes_augments/rain_70
+augmentation_type: rain
+rain_rate: 70.0

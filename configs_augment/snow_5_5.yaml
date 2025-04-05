@@ -1,0 +1,4 @@
+input_folder: /workspace/mmdetection3d/data/nuscenes/samples/LIDAR_TOP
+output_folder: /workspace/my_workspace/nusecnes_augments/snow_5_5
+augmentation_type: snow
+snow_rate: 5.5
