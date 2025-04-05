@@ -13,18 +13,25 @@ The evaluation results were plotted and saved in the image below:
 ![AP Drop across Weather Conditions](assets/output.png)
 
 ---
-
 ## ⚙️ Setup & Implementation
-
 ### 1. **Framework Setup**
 - Built on [MMDetection3D](https://github.com/open-mmlab/mmdetection3d).
-- Evaulated BEVFusion with nuScenes mini (LIDAR_TOP view) as the input point cloud source.
+- Evaluated BEVFusion with nuScenes mini (LIDAR_TOP view) as the input point cloud source.
 
 ### 2. **Dataset: NuScenes**
 - Utilized LIDAR_TOP point cloud data from the nuScenes dataset.
 
 ### 3. **Weather Augmentation with LISA**
 - Simulated weather distortions with [LISA Augmentation Tool](https://github.com/LISA-research/LISA).
+- Configured LISA parameters to match the specifications of the nuScenes dataset's LiDAR sensor:
+  - **Refractive index of water (m):** 1.328
+  - **Wavelength (λ):** 905 nm (Velodyne HDL-32E)
+  - **Maximum range (rmax):** ~120 m
+  - **Minimum range (rmin):** ~1 m
+  - **Beam divergence (bdiv):** ~3 mrad
+  - **Range accuracy (dR):** ~2 cm
+  - **Droplet diameter (dst):** 0.05 mm
+  - **Mode:** Strongest return
 
 ---
 
